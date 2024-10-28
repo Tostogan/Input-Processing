@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Processing</title>
+    <style>
+        form {
+            border: 1px solid rgb(81, 150, 219);
+            padding: 10px;
+            border-radius: 7px;
+            background-color: rgb(212, 244, 244);
+            font-family: sans-serif;    
+        }
+        h2 {
+            color: rgb(130, 223, 225);
+        }
+        input {
+            padding: 10px;
+            border: 1px solid white;
+        }
+        button {
+            padding: 10px;
+            background-color: rgb(87, 204, 227);
+            color: white;
+            border: 1px solid grey;
+        }
+        button:hover {
+            background-color: rgb(45, 175, 201);
+            margin-left: 10px;
+        }
+        /* input:hover {
+            background-color: rgb(174, 216, 225);
+            margin-right: 10px; */
+        input:focus {
+            outline: none;
+            border: 3px solid rgb(45, 175, 201);
+        }
+        input:invalid {
+            border-bottom: 3px solid rgb(127, 237, 245);
+            background-color: rgb(166, 232, 238);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/subscribe">
+        <h2>subscribe to our newsletter</h2>
+        <input 
+        type="text" 
+        placeholder="your email address" 
+        required
+        pattern="^([\w\d\-\.]+)@{1}(([\w\d\-]{1,67})|([\w\d\-]+\.[\w\d\-]{1,67}))\.(([a-zA-Z\d]{2,4})(\.[a-zA-Z\d]{2})?)$">
+        <button>SUBSCRIBE</button>
+    </form>
+    
+</body>
+</html>
